@@ -1,0 +1,14 @@
+get http://localhost:3000/subscribers
+
+###
+get http://localhost:3000/subscribers/15
+
+###
+
+post get http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name":"person1",
+    "subscribedToChannel": "Web Dev"
+}
