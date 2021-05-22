@@ -5,10 +5,10 @@ get http://localhost:3000/subscribers/15
 
 ###
 
-post get http://localhost:3000/subscribers
+post http://localhost:3000/subscribers
 Content-Type: application/json
 
 {
-    "name":"person1",
+    "name":"person2",
     "subscribedToChannel": "Web Dev"
 }
