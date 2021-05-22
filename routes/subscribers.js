@@ -14,7 +14,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', (req, res) => {
     res.send(req.params.id)
 })
-
+//add
 router.post('/', async (req, res) => {
     const subscriber = new Subscriber({
         name: req.body.name,
