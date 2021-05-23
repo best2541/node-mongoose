@@ -1,7 +1,7 @@
 get http://localhost:3000/subscribers
 
 ###
-get http://localhost:3000/subscribers/15
+get http://localhost:3000/subscribers/60aa5a01efd9f52988a3ac07
 
 ###
 
@@ -11,4 +11,17 @@ Content-Type: application/json
 {
     "name":"person2",
     "subscribedToChannel": "Web Dev"
+}
+
+###
+DELETE http://localhost:3000/subscribers/60aa5a01efd9f52988a3ac07
+
+###
+
+PATCH http://localhost:3000/subscribers/60aa65a4e337e02bb0177718
+Content-Type: application/json
+
+{
+    "name":"ChangedName",
+    "subscriberToChannel": "Still same"
 }
